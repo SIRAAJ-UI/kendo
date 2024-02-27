@@ -1,107 +1,82 @@
-<!-- 
-<div class="table-responsive">
-    <table class="table">
-        <tbody>
-
-            <tr>
-                <th>APN:</th>
-                <td>941-2817-2</td>
-                <td>
-                    <button class="btn btn-sm btn-secondary">Edit APN</button>
-                </td>
-                <div>
-                    <tr>
-                        <th style="min-width: 80px; width:80px;">APN Count:</th>
-                        <td style="min-width: 50px; width:50px;">1</td>
-                    </tr>
-                </div>
-               
-                <th>Ind Pur Price:</th>
-                <td>4,040,000</td>
-                <th>Gross SF:</th>
-                <td>12,364</td>
-            </tr>
-
-            <tr>
-                <th>Address:</th>
-                <td>5175 JOHNSON DR</td>
-                <ng-container>
-                    <tr>
-                        <th class="custom-table-th">Use Cd:</th>
-                        <td class="custom-table-td">9400</td>
-                        <th>Use:</th>
-                        <td>OFFICE <6 STORY</td>
-                    </tr>
-                </ng-container>
-                <th >Adj Sales Price:</th>
-                <th>PC NRA:</th>
-                <td>12,364</td>
-            </tr>
-            <tr>
-                <th>City:</th>
-                <td>PLEASNATION</td>
-
-                <div>
-                    <tr>
-                        <th style="min-width: 80px; width:80px;">State:</th>
-                        <td style="min-width: 50px; width:50px;">CA</td>
-                        <th>Zip:</th>
-                        <td>94588-3343</td>
-                    </tr>
-                </div>
-                <th>Trans Tax Price:</th>
-                <td>4,040,000</td>
-
-                <th>Land Area:</th>
-                <td>48,578</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-      
-
- -->
-
-
-<div class="row">
-    <div class="col"><label style="font-weight: 700;">APN:</label> 941-28989   <button>Edit VPN</button></div>
-    <div class="col"><label style="font-weight: 700;">APN Count:</label> 1</div>
-    <div class="col"><label style="font-weight: 700;">Ind Pur Price:</label> 4,040,000</div>
-    <div class="col"><label style="font-weight: 700;">Gross SF:</label>12,364</div>
-</div>
-<div class="row mb-2">
-    <div class="col"><label style="font-weight: 700;">Adress:</label> 5175 JOHNSON DR</div>
-    
-    <div class="col">
-        <ng-container>
-            <label style="font-weight: 700;">Use Cd:</label> 1
-            <label style="font-weight: 700;">Use:</label> OFFICE <6 STORY
-
-        </ng-container>
-        
+<div class="container-fluid">
+    <div class="row mt-1">
+        <div class="col">
+            <label style="font-weight: 700;">APN:</label> 941-28989 
+                <button class="btn btn-sm btn-primary">Edit VPN</button>
+        </div>
+        <div class="col"><label style="font-weight: 700;">APN Count:</label> 1</div>
+        <div class="col"><label style="font-weight: 700;">Ind Pur Price:</label> 4,040,000</div>
+        <div class="col"><label style="font-weight: 700;">Gross SF:</label>12,364</div>
     </div>
-
-
-    <div class="col"><label style="font-weight: 700;">Adj Sales Price:</label> </div>
-    <div class="col"><label style="font-weight: 700;">PC NRA:</label>12,364</div>
+    <div class="row mb-2">
+        <div class="col"><label style="font-weight: 700;">Adress:</label> 5175 JOHNSON DR</div>
+        <div class="col">
+            <ng-container>
+                <label style="font-weight: 700;">Use Cd:</label> 1
+                <label style="font-weight: 700;">Use:</label> OFFICE &lt;6 STORY
+            </ng-container>
+        </div>
+        <div class="col"><label style="font-weight: 700;">Adj Sales Price:</label> </div>
+        <div class="col"><label style="font-weight: 700;">PC NRA:</label>12,364</div>
+    </div>
+    <div class="row mb-2">
+        <div class="col"><label style="font-weight: 700;">City:</label> PLEASANTON</div>
+        <div class="col">
+            <ng-container>
+                <label style="font-weight: 700;">State:</label> CA
+                <label style="font-weight: 700;">Zip:</label> 9458-3343
+            </ng-container>
+        </div>
+        <div class="col"><label style="font-weight: 700;">Trans Tax Price:</label> 4,040,000 </div>
+        <div class="col"><label style="font-weight: 700;">Land Area:</label>48,578</div>
+    </div>
 </div>
-    
 
-<div class="example-config">
-  <kendo-tabstrip >
+<kendo-tabstrip>
     <kendo-tabstrip-tab title="Sales Info" [selected]="true">
-      <ng-template kendoTabContent>
-        <app-sales-info-tab></app-sales-info-tab>
-      </ng-template>
+        <ng-template kendoTabContent>
+            <app-sales-info-tab></app-sales-info-tab>
+        </ng-template>
     </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="Tab 2">
-      <ng-template kendoTabContent>
-        <p>Tab 2 Content</p>
-      </ng-template>
+    <kendo-tabstrip-tab title="Prop Characteristics">
+        <ng-template kendoTabContent>
+            <p>Tab 2 Content</p>
+        </ng-template>
     </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab title="Tab 3">
-      <ng-template kendoTabContent>
-        <p>Tab 3 Content</p>
-      </ng-template>
+    <kendo-tabstrip-tab title="Income">
+        <ng-template kendoTabContent>
+            <p>Tab 3 Content</p>
+        </ng-template>
     </kendo-tabstrip-tab>
-  </kendo-tabstrip>
+    <kendo-tabstrip-tab title="Expenses">
+        <ng-template kendoTabContent>
+            <p>Expenses</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+    <kendo-tabstrip-tab title="Adjustments">
+        <ng-template kendoTabContent>
+            <p>Expenses</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+    <kendo-tabstrip-tab title="Income Analysis & Value Ind">
+        <ng-template kendoTabContent>
+            <p>Income Analysis & Value Ind</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+    <kendo-tabstrip-tab title="Remarks">
+        <ng-template kendoTabContent>
+            <p>Remarks</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+    <kendo-tabstrip-tab title="Sources">
+        <ng-template kendoTabContent>
+            <p>Sources</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+
+    <kendo-tabstrip-tab title="Report">
+        <ng-template kendoTabContent>
+            <p>Report</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+</kendo-tabstrip>

@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-sm-12 col-md-12">
-        <button class="btn btn-md btn-primary me-2" kendoButton>Save</button>
-        <button class="btn btn-md btn-secondary" kendoButton>Clear</button>
+        <button class="btn btn-sm btn-primary me-2" kendoButton>Save</button>
+        <button class="btn btn-sm btn-secondary" kendoButton>Clear</button>
     </div>
 </div>
 
@@ -11,12 +11,23 @@
       <div class="col-sm-4">
         <kendo-dropdownlist [data]="data"></kendo-dropdownlist>
       </div>
+
+      <label for="anticipatedUse" class="col-sm-2 col-form-label">Benchmark Rating:</label>
+      <div class="col-sm-4">
+        <input type="text">
+      </div>
+
     </div>
 
     <div class="form-group row mt-2">
         <label for="anticipatedUse" class="col-sm-2 col-form-label">Details:</label>
         <div class="col-sm-4">
             <input type="text" class="w-100">
+        </div>
+
+        <label  class="col-sm-2 col-form-label">Supervisor Approved:</label>
+        <div class="col-sm-4">
+            <label class="col-form-label">Yes</label>
         </div>
     </div>
 
@@ -35,9 +46,12 @@
     </div>
 
     <div class="form-group row mt-2">
-        <label for="anticipatedUse" class="col-sm-2 col-form-label">Buyer/Seller Relationship:</label>
-        <div class="col-sm-4">
+        <label class="col-sm-2 col-form-label">Buyer/Seller Relationship:</label>
+        <div class="col-sm-2">
             <kendo-dropdownlist [data]="brokerInvolved" style="width:100px"></kendo-dropdownlist>
+        </div>
+        <div class="col-sm-8">
+            If so, specify <input style="width:400px" type="text"/>
         </div>
     </div>
 
@@ -60,9 +74,7 @@
     <div class="form-group row mt-2">
         <label for="anticipatedUse" class="col-sm-2 col-form-label">Contract Date:</label>
         <div class="col-sm-4">
-            <kendo-datepicker
-                  placeholder="Choose a date ..."
-                ></kendo-datepicker>
+            <kendo-datepicker placeholder="Choose a date ..."></kendo-datepicker>
         </div>
     </div>
 

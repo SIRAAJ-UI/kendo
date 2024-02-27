@@ -3,10 +3,10 @@
 $kendo-color-primary: #ff69b4;
   // Set the variables here.
 @import "@progress/kendo-theme-bootstrap/dist/all.scss";
-  @import "bootstrap/scss/bootstrap.scss";
-// @import "@progress/kendo-theme-default/scss/dist/all.scss";
+// @import "./custom-theme.scss";
 
 
 body {
   font-size: 14px;
 }
+
